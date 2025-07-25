@@ -8,10 +8,10 @@ from pydantic import BaseModel
 import joblib
 
 # Carga los modelos y el vectorizador
-vectorizer = joblib.load("vectorizer.pkl")
-clf_concepto = joblib.load("modelo_concepto.pkl")
-clf_subconcepto = joblib.load("modelo_subconcepto.pkl")
-clf_descripcion = joblib.load("modelo_descripcion.pkl")
+vectorizer = joblib.load("api_modelos/vectorizer.pkl")
+clf_concepto = joblib.load("api_modelos/modelo_concepto.pkl")
+clf_subconcepto = joblib.load("api_modelos/modelo_subconcepto.pkl")
+clf_descripcion = joblib.load("api_modelos/modelo_descripcion.pkl")
 
 app = FastAPI()
 
