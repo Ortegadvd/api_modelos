@@ -1,3 +1,8 @@
+import subprocess
+
+# Ejecuta el script para descargar el modelo si no existe
+subprocess.run(["python", "download_model.py"])
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
